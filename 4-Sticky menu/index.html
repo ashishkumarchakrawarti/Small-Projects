@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Sticky Navbar</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    body {
+      margin: 0px;
+    }
+
+    #header{
+      text-align: center;
+    }
+    #logo{
+      width:250px;
+      height:auto;
+    }
+    #menu-bar{
+      text-align:center;
+background-color:cadetblue;
+     }
+    #menu-bar li{
+      display:inline-block;
+      padding: 15px 10px;
+    }
+    #container{
+      text-align:center;
+      padding:50px 100px;
+    }
+    #about-img{
+      width:100%;
+    }
+    .sticky{
+      position: fixed;
+      top:0;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="header">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjwmALuU19xPRQx_5_ZQK8QqG5HpA79AD5Iw&usqp=CAU" id="logo">
+  </div>
+  <nav id="menu-bar">
+    <li>Home</li>
+    <li>About Us</li>
+    <li>Our Team</li>
+    <li>Client</li>
+    <li>Contact Us</li>
+  </nav>
+
+  <div id="container">
+    <h1>About Us</h1>
+    <img  id="about-img" src="https://www.shutterstock.com/image-photo/group-portrait-professional-business-team-260nw-138247802.jpg">
+    <p>loremLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+      pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+      laborum.
+    </p>
+  </div>
+  <script>
+    window.addEventListener('scroll',function(){
+      let navbar = document.getElementById('menu-bar');
+      
+      if(window.pageYOffset >= 190){
+        
+      navbar.classList.add('sticky');
+      }else{
+          navbar.classList.remove('sticky');
+      }
+    })
+  </script>
+</body>
+
+</html>

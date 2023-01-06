@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Image Slider</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="slide-container">
+        <div class="slide">
+            <img
+                src="https://images.unsplash.com/photo-1519293978507-9c6bb9f82eda?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80">
+            <div class="caption"> Caption Text 1</div>
+        </div>
+
+        <div class="slide">
+            <img
+                src="https://images.unsplash.com/photo-1431411207774-da3c7311b5e8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fG5hdHVyYWx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60">
+            <div class="caption"> Caption Text 2</div>
+        </div>
+
+        <div class="slide">
+            <img src="https://wallpaperaccess.com/full/168083.jpg">
+            <div class="caption"> Caption Text 3</div>
+        </div>
+
+        <div class="slide">
+            <img
+                src="https://images.unsplash.com/reserve/bOvf94dPRxWu0u3QsPjF_tree.jpg?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bmF0dXJhbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60">
+            <div class="caption"> Caption Text 4</div>
+        </div>
+    </div>
+
+
+    <span class="arrow prev" onclick="controller(+1)">&#10094;</span>
+    <span class="arrow next" onclick="controller(-1)">&#10095;</span>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
